@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <!--这就是Spring的配置文件-->
+    <!--IDEA工具类为我们提供了这个文件的模版，一定要使用这个模版来创建-->
+    <!--这个文件最好是放在类路径当中，方便后期的移植-->
+    <!--放在resources根路径下，就相当于是放到了类的根路径下-->
+    <!--配置bean，这样spring才可以帮助我们管理这个对象-->
+
+    <!--
+        bean标签的两个重要属性：
+            id:是这个bean的身份证号，不能重复，是唯一的标识符号
+            class:必须填写类的全路径，全限定类名(带包名的类名)
+    -->
+    <!--配置dao-->
+    <bean id="userDaoBean" class="spring.dao.UserDao"/>
+
+    <!--配置service-->
+    <bean id="userServiceBean" class="spring.service.UserService">
+        <!--想让Spring调用对应的set方法，需要配置property标签-->
+        <!--name属性怎么指定值：set方法的方法名，去掉set，然后把剩下的单词首字母变小写，写到这里-->
+        <!--ref翻译为引用。ref后面指定的是要注入的bean的id-->
+        <!--set方法起名的时候，不要为难自己，按照规范来，所以一般情况下name位置写属性名就可以了-->
+        <property name="userDao" ref="userDaoBean"/>
+    </bean>
+</beans>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <!--声明/定义bean-->
+    <bean id="orderDaoBean" class="spring.dao.OrderDao"/>
+    <bean id="orderServiceBean" class="spring.service.OrderService">
+        <!--使用ref属性来引入，这是注入外部Bean-->
+        <property name="orderDao" ref="orderDaoBean"/>
+    </bean>
+
+    <bean id="orderServiceBean2" class="spring.service.OrderService">
+        <property name="orderDao">
+            <!--在property标签中使用嵌套的bean标签，这就是内部Bean-->
+            <bean class="spring.dao.OrderDao"/>
+        </property>
+    </bean>
+
+    <!--注入简单类型-->
+    <bean id="userBean" class="spring.bean.User">
+        <!--重点：如果是给简单类型赋值，就不能用ref了，需要使用value了-->
+        <property name="username" value="GuoYu"/>
+        <property name="password" value="123"/>
+        <property name="age" value="20"/>
+    </bean>
+
+    <!--测试哪些类型为简单类型-->
+    <bean id="svt" class="spring.bean.SimpleValueType">
+        <property name="age" value="23"/>
+        <property name="age2" value="23"/>
+        <property name="c" value="G"/>
+        <property name="c2" value="G"/>
+        <property name="flag" value="false"/>
+        <property name="flag2" value="false"/>
+        <property name="season" value="AUTUMN"/>
+        <!--如果你硬要把Date当作简单类型的话 ，使用value赋值的话，这个日期字符串格式有要求-->
+        <!--在实际开发中，我们一般不会把Date当作简单类型，虽然它是简单类型，一般会采用Date类型的属性赋值-->
+        <property name="birth" value="1997-11-4"/>
+    </bean>
+</beans>

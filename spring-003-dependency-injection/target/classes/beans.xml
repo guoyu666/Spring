@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <bean id="userDaoBean" class="spring.dao.UserDao"/>
+    <bean id="vipDaoBean" class="spring.dao.VipDao"/>
+    <bean id="csBean" class="spring.service.CustomerService">
+        <!--构造注入-->
+        <!--
+            index属性指定参数的下标，第一个参数是0，第二个参数是1，第三个参数是2，以此类推...
+            ref属性用来指定注入的bean的id
+        -->
+        <!--指定构造方法的第一个参数，下标是0-->
+        <constructor-arg index="0" ref="userDaoBean"/>
+        <!--指定构造方法的第二个参数，下标是1-->
+        <constructor-arg index="1" ref="vipDaoBean"/>
+    </bean>
+</beans>

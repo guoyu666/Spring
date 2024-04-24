@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+                           http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+
+    <!--引入外部的properties文件
+        第一步：引入context命名空间
+        第二步：使用标签context:property-placeholder的location属性来指定属性配置文件的路径
+    -->
+    <context:property-placeholder location="jdbc.properties"/>
+    <!--配置数据源-->
+    <bean id="ds" class="spring.jdbc.MyDataSource">
+        <!--怎么取值呢？第三步：${key}-->
+        <property name="driver" value="${driverClass}"/>
+        <property name="url" value="${url}"/>
+        <property name="username" value="${username}"/>
+        <property name="password" value="${password}"/>
+    </bean>
+</beans>

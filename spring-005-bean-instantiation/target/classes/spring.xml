@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!--Spring提供的实例化方式，第一种：在spring配置文件中会自动调用该类的无参数的构造方法来实例化Bean-->
+    <!--加载Spring容器的时候会调用配置的bean的所有无参数构造方法-->
+    <bean id="sb" class="bean.SpringBean"/>
+
+    <!--Spring提供的实例化方式，第二种：通过简单工厂模式，你需要在Spring-配置文件中告诉Spring框架，调用哪个方法获取Bean-->
+    <!--factory-method属性指定的是工厂类当中的静态方法，也就是告诉Spring框架，调用这个方法可以获取Bean-->
+    <bean id="star" class="bean.StarFactory" factory-method="get"/>
+
+    <!--Spring提供的实例化方式，第三种：通过工厂方法模式.通过factory-bean属性+factory-method属性来共同完成-->
+    <!--告诉Spring框架，调用哪个对象的哪个方法来获取Bean-->
+    <!--GunFactory实际上就是一个FactoryBean-->
+    <bean id="gunFactory" class="bean.GunFactory"/>
+    <!--以下配置很关键，factory-bean属性告诉Spring调用哪个对象。factory-method告诉Spring调用该对象的哪个方法-->
+    <bean id="gun" factory-bean="gunFactory" factory-method="get"/>
+
+    <!--Spring提供的实例化方式，第四种：通过FactoryBean接口来实现-->
+    <!--这种方式实际上就是第三种方式的简化-->
+    <!--由于你编写的类实现了FactoryBean接口，所以 这个类是一个特殊的类，不需要你再手动指定：factory-bean和factory-method-->
+    <!--通过一个特殊的Bean：工厂Bean，来返回一个普通的Bean Person对象-->
+    <!--通过FactoryBean这个工厂Bean主要是想对普通Bean进行加工处理-->
+    <bean id="person" class="bean.PersonFactoryBean"/>
+
+    <bean id="student" class="bean.Student">
+        <!--把日期当作简单类型-->
+        <property name="birth" value="Mon Oct 10 14:30:26 CST 2022"/>
+    </bean>
+
+    <!--通过工厂Bean：DateFactoryBean来返回普通Bean：java.util.Date-->
+    <bean id="date" class="bean.DateFactoryBean">
+        <constructor-arg index="0" value="1997-11-4"/>
+    </bean>
+
+    <bean id="studentBean" class="bean.Student">
+        <property name="birth" ref="date"/>
+    </bean>
+
+</beans>

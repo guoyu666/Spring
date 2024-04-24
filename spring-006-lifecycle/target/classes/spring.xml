@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!--配置Bean后处理器-->
+    <!--注意：这个Bean后处理器将作用于配置文件中所有的bean-->
+    <bean class="bean.LogBeanPostProcessor"/>
+
+    <!--需要手动指定初始化方法和销毁方法-->
+    <bean id="user" class="bean.User" init-method="initBean" destroy-method="destroyBean">
+        <property name="name" value="GuoYu"/>
+    </bean>
+
+</beans>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <bean id="personBean" class="spring.bean.Person">
+        <property name="names">
+            <!--List集合有序可重复-->
+            <list>
+                <value>GuoYu</value>
+                <value>小雨</value>
+                <value>郭家小雨</value>
+            </list>
+        </property>
+
+        <property name="addresses">
+            <!--Set集合无序不可重复-->
+            <set>
+                <value>广州市白云区</value>
+                <value>南充市营山县</value>
+            </set>
+        </property>
+
+        <property name="phones">
+            <!--注入Map集合-->
+            <map>
+                <entry key="1" value="110"/>
+                <entry key="2" value="120"/>
+            </map>
+        </property>
+
+        <property name="properties">
+            <!--注入Properties属性类对象-->
+            <props>
+                <prop key="driver">com.mysql.cj.jdbc.Driver</prop>
+            </props>
+        </property>
+    </bean>
+
+
+</beans>

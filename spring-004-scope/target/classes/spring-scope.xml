@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!--目前来说：scope属性有两个值
+        第一个值：singleton 单例（默认情况下就是单例的）
+        第二个值：prototype 多例/原型
+    -->
+    <bean id="springBean" class="spring.bean.SpringBean" scope="singleton"/>
+</beans>

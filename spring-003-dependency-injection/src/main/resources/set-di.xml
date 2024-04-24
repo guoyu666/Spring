@@ -37,4 +37,10 @@
         <!--在实际开发中，我们一般不会把Date当作简单类型，虽然它是简单类型，一般会采用Date类型的属性赋值-->
         <property name="birth" value="Sat Apr 20 09:42:13 CST 2024"/>
     </bean>
+
+    <bean id="catBean" class="spring.bean.Cat">
+        <!--不给属性注入，属性值默认就是null-->
+        <property name="name" value="tom"/>
+        <property name="age" value="3"/>
+    </bean>
 </beans>

@@ -6,9 +6,18 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="spring-003-dependency-injection" />
-        <module name="spring-001-revelation" />
+        <module name="spring-007-circular-dependency" />
+        <module name="review-annotation" />
+        <module name="factory-method" />
         <module name="spring-002-first" />
+        <module name="simple-factory" />
+        <module name="spring-005-bean-instantiation" />
+        <module name="myspring" />
+        <module name="spring-001-revelation" />
+        <module name="spring-006-lifecycle" />
+        <module name="spring-003-dependency-injection" />
+        <module name="review-reflect" />
+        <module name="spring-004-scope" />
       </profile>
     </annotationProcessing>
   </component>

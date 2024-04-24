@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="w1" class="spring.bean.Woman">
+        <property name="name" value="迪丽热巴"/>
+    </bean>
+
+    <bean id="w2" class="spring.bean.Woman">
+        <property name="name" value="古力娜扎"/>
+    </bean>
+
+    <bean id="yuQian" class="spring.bean.QianDaYe">
+        <!--这个数组属性当中的元素类型是String简单类型-->
+        <property name="interests">
+            <array>
+                <value>抽烟</value>
+                <value>喝酒</value>
+                <value>烫头</value>
+            </array>
+        </property>
+
+        <!--这个数组当中的类型就不是简单类型了-->
+        <property name="women">
+            <array>
+                <ref bean="w1"/>
+                <ref bean="w2"/>
+            </array>
+        </property>
+    </bean>
+</beans>

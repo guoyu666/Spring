@@ -17,6 +17,9 @@
         <option value="$PROJECT_DIR$/review-reflect/pom.xml" />
         <option value="$PROJECT_DIR$/myspring/pom.xml" />
         <option value="$PROJECT_DIR$/review-annotation/pom.xml" />
+        <option value="$PROJECT_DIR$/srping-008-ioc-annotation/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-009-JDBC/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-008-ioc-annotation/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">

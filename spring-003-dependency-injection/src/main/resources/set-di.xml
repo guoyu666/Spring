@@ -3,7 +3,7 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
     <!--声明/定义bean-->
-    <bean id="orderDaoBean" class="spring.dao.OrderDao"/>
+    <bean id="orderDaoBean" class="spring.bean.OrderDao"/>
     <bean id="orderServiceBean" class="spring.service.OrderService">
         <!--使用ref属性来引入，这是注入外部Bean-->
         <property name="orderDao" ref="orderDaoBean"/>
@@ -12,7 +12,7 @@
     <bean id="orderServiceBean2" class="spring.service.OrderService">
         <property name="orderDao">
             <!--在property标签中使用嵌套的bean标签，这就是内部Bean-->
-            <bean class="spring.dao.OrderDao"/>
+            <bean class="spring.bean.OrderDao"/>
         </property>
     </bean>
 

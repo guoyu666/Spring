@@ -46,4 +46,8 @@ public class User {
 
     public User() {
     }
+
+    public void setAge(int age) {
+
+    }
 }

@@ -20,6 +20,8 @@
         <option value="$PROJECT_DIR$/srping-008-ioc-annotation/pom.xml" />
         <option value="$PROJECT_DIR$/spring-009-JDBC/pom.xml" />
         <option value="$PROJECT_DIR$/spring-008-ioc-annotation/pom.xml" />
+        <option value="$PROJECT_DIR$/static-proxy/pom.xml" />
+        <option value="$PROJECT_DIR$/dynamic-proxy-jdk/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">

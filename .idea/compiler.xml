@@ -11,6 +11,7 @@
         <module name="spring-009-JDBC" />
         <module name="spring-001-revelation" />
         <module name="spring-006-lifecycle" />
+        <module name="dynamic-proxy-jdk" />
         <module name="spring-003-dependency-injection" />
         <module name="review-annotation" />
         <module name="factory-method" />
@@ -20,6 +21,7 @@
         <module name="myspring" />
         <module name="review-reflect" />
         <module name="spring-004-scope" />
+        <module name="static-proxy" />
       </profile>
     </annotationProcessing>
   </component>

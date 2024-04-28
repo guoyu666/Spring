@@ -22,6 +22,8 @@
         <option value="$PROJECT_DIR$/spring-008-ioc-annotation/pom.xml" />
         <option value="$PROJECT_DIR$/static-proxy/pom.xml" />
         <option value="$PROJECT_DIR$/dynamic-proxy-jdk/pom.xml" />
+        <option value="$PROJECT_DIR$/dynamic-proxy-cglib/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-010-spring-aspectj-aop-annotation/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">

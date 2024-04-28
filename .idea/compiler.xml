@@ -14,6 +14,7 @@
         <module name="dynamic-proxy-jdk" />
         <module name="spring-003-dependency-injection" />
         <module name="review-annotation" />
+        <module name="spring-010-spring-aspectj-aop-annotation" />
         <module name="factory-method" />
         <module name="spring-008-ioc-annotation" />
         <module name="spring-002-first" />
@@ -22,6 +23,7 @@
         <module name="review-reflect" />
         <module name="spring-004-scope" />
         <module name="static-proxy" />
+        <module name="dynamic-proxy-cglib" />
       </profile>
     </annotationProcessing>
   </component>

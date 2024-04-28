@@ -3,6 +3,12 @@ package service;
 // 目标对象
 public class OrderServiceImpl implements OrderService{
     @Override
+    public String getName() {
+        System.out.println("getName()方法执行！！");
+        return "GuoYu";
+    }
+
+    @Override
     public void generate() {    // 目标方法
         try {
             Thread.sleep(1234);

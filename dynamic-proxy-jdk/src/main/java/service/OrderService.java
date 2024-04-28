@@ -4,6 +4,9 @@ package service;
  * 订单业务接口
  */
 public interface OrderService { //代理对象和目标对象的公共接口
+
+    String getName();
+
     // 生成订单
     void generate();
 

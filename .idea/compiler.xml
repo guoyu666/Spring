@@ -12,6 +12,7 @@
         <module name="spring-001-revelation" />
         <module name="spring-006-lifecycle" />
         <module name="dynamic-proxy-jdk" />
+        <module name="spring-011-spring-aspectj-aop-xml" />
         <module name="spring-003-dependency-injection" />
         <module name="review-annotation" />
         <module name="spring-010-spring-aspectj-aop-annotation" />
@@ -19,7 +20,9 @@
         <module name="spring-008-ioc-annotation" />
         <module name="spring-002-first" />
         <module name="spring-005-bean-instantiation" />
+        <module name="spring-012-aop-realapplication" />
         <module name="myspring" />
+        <module name="spring-013-tx-bank" />
         <module name="review-reflect" />
         <module name="spring-004-scope" />
         <module name="static-proxy" />

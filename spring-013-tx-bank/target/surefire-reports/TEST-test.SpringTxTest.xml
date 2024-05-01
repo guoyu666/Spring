@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="test.SpringTxTest" time="1.71" tests="2" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="21"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.class.path" value="/Users/apple/Documents/ideaProjects/Spring/spring-013-tx-bank/target/test-classes:/Users/apple/Documents/ideaProjects/Spring/spring-013-tx-bank/target/classes:/Users/apple/devTools/local-maven/org/springframework/spring-context/6.1.4/spring-context-6.1.4.jar:/Users/apple/devTools/local-maven/org/springframework/spring-aop/6.1.4/spring-aop-6.1.4.jar:/Users/apple/devTools/local-maven/org/springframework/spring-beans/6.1.4/spring-beans-6.1.4.jar:/Users/apple/devTools/local-maven/org/springframework/spring-core/6.1.4/spring-core-6.1.4.jar:/Users/apple/devTools/local-maven/org/springframework/spring-jcl/6.1.4/spring-jcl-6.1.4.jar:/Users/apple/devTools/local-maven/org/springframework/spring-expression/6.1.4/spring-expression-6.1.4.jar:/Users/apple/devTools/local-maven/io/micrometer/micrometer-observation/1.12.3/micrometer-observation-1.12.3.jar:/Users/apple/devTools/local-maven/io/micrometer/micrometer-commons/1.12.3/micrometer-commons-1.12.3.jar:/Users/apple/devTools/local-maven/org/springframework/spring-jdbc/6.1.4/spring-jdbc-6.1.4.jar:/Users/apple/devTools/local-maven/org/springframework/spring-tx/6.1.4/spring-tx-6.1.4.jar:/Users/apple/devTools/local-maven/com/mysql/mysql-connector-j/8.0.33/mysql-connector-j-8.0.33.jar:/Users/apple/devTools/local-maven/com/google/protobuf/protobuf-java/3.21.9/protobuf-java-3.21.9.jar:/Users/apple/devTools/local-maven/com/alibaba/druid/1.2.22/druid-1.2.22.jar:/Users/apple/devTools/local-maven/junit/junit/4.13.2/junit-4.13.2.jar:/Users/apple/devTools/local-maven/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/Users/apple/devTools/local-maven/jakarta/annotation/jakarta.annotation-api/1.3.5/jakarta.annotation-api-1.3.5.jar:/Users/apple/devTools/local-maven/org/apache/logging/log4j/log4j-core/2.23.1/log4j-core-2.23.1.jar:/Users/apple/devTools/local-maven/org/apache/logging/log4j/log4j-api/2.23.1/log4j-api-2.23.1.jar:/Users/apple/devTools/local-maven/org/apache/logging/log4j/log4j-slf4j2-impl/2.23.1/log4j-slf4j2-impl-2.23.1.jar:/Users/apple/devTools/local-maven/org/slf4j/slf4j-api/2.0.9/slf4j-api-2.0.9.jar:"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="java.vm.specification.version" value="21"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="CN"/>
+    <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk-21.jdk/Contents/Home/lib"/>
+    <property name="sun.java.command" value="/Users/apple/Documents/ideaProjects/Spring/spring-013-tx-bank/target/surefire/surefirebooter-20240430162738556_3.jar /Users/apple/Documents/ideaProjects/Spring/spring-013-tx-bank/target/surefire 2024-04-30T16-27-20_056-jvmRun1 surefire-20240430162738556_1tmp surefire_0-20240430162738556_2tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="/Users/apple/Documents/ideaProjects/Spring/spring-013-tx-bank/target/test-classes:/Users/apple/Documents/ideaProjects/Spring/spring-013-tx-bank/target/classes:/Users/apple/devTools/local-maven/org/springframework/spring-context/6.1.4/spring-context-6.1.4.jar:/Users/apple/devTools/local-maven/org/springframework/spring-aop/6.1.4/spring-aop-6.1.4.jar:/Users/apple/devTools/local-maven/org/springframework/spring-beans/6.1.4/spring-beans-6.1.4.jar:/Users/apple/devTools/local-maven/org/springframework/spring-core/6.1.4/spring-core-6.1.4.jar:/Users/apple/devTools/local-maven/org/springframework/spring-jcl/6.1.4/spring-jcl-6.1.4.jar:/Users/apple/devTools/local-maven/org/springframework/spring-expression/6.1.4/spring-expression-6.1.4.jar:/Users/apple/devTools/local-maven/io/micrometer/micrometer-observation/1.12.3/micrometer-observation-1.12.3.jar:/Users/apple/devTools/local-maven/io/micrometer/micrometer-commons/1.12.3/micrometer-commons-1.12.3.jar:/Users/apple/devTools/local-maven/org/springframework/spring-jdbc/6.1.4/spring-jdbc-6.1.4.jar:/Users/apple/devTools/local-maven/org/springframework/spring-tx/6.1.4/spring-tx-6.1.4.jar:/Users/apple/devTools/local-maven/com/mysql/mysql-connector-j/8.0.33/mysql-connector-j-8.0.33.jar:/Users/apple/devTools/local-maven/com/google/protobuf/protobuf-java/3.21.9/protobuf-java-3.21.9.jar:/Users/apple/devTools/local-maven/com/alibaba/druid/1.2.22/druid-1.2.22.jar:/Users/apple/devTools/local-maven/junit/junit/4.13.2/junit-4.13.2.jar:/Users/apple/devTools/local-maven/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/Users/apple/devTools/local-maven/jakarta/annotation/jakarta.annotation-api/1.3.5/jakarta.annotation-api-1.3.5.jar:/Users/apple/devTools/local-maven/org/apache/logging/log4j/log4j-core/2.23.1/log4j-core-2.23.1.jar:/Users/apple/devTools/local-maven/org/apache/logging/log4j/log4j-api/2.23.1/log4j-api-2.23.1.jar:/Users/apple/devTools/local-maven/org/apache/logging/log4j/log4j-slf4j2-impl/2.23.1/log4j-slf4j2-impl-2.23.1.jar:/Users/apple/devTools/local-maven/org/slf4j/slf4j-api/2.0.9/slf4j-api-2.0.9.jar:"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="/Users/apple"/>
+    <property name="user.language" value="zh"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2023-10-17"/>
+    <property name="java.home" value="/Library/Java/JavaVirtualMachines/jdk-21.jdk/Contents/Home"/>
+    <property name="file.separator" value="/"/>
+    <property name="basedir" value="/Users/apple/Documents/ideaProjects/Spring/spring-013-tx-bank"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="apple.awt.application.name" value="ForkedBooter"/>
+    <property name="surefire.real.class.path" value="/Users/apple/Documents/ideaProjects/Spring/spring-013-tx-bank/target/surefire/surefirebooter-20240430162738556_3.jar"/>
+    <property name="user.script" value="Hans"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="21.0.1+12-LTS-29"/>
+    <property name="user.name" value="apple"/>
+    <property name="stdout.encoding" value="UTF-8"/>
+    <property name="path.separator" value=":"/>
+    <property name="os.version" value="14.4.1"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="localRepository" value="/Users/apple/devTools/local-maven"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="/var/folders/qb/lvfj7cs14xlf4wl4sdjmf8jh0000gn/T/"/>
+    <property name="idea.version" value="2024.1"/>
+    <property name="java.version" value="21.0.1"/>
+    <property name="user.dir" value="/Users/apple/Documents/ideaProjects/Spring/spring-013-tx-bank"/>
+    <property name="os.arch" value="x86_64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="native.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/Users/apple/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="stderr.encoding" value="UTF-8"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="21.0.1+12-LTS-29"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="maven.repo.local" value="/Users/apple/devTools/local-maven"/>
+    <property name="java.class.version" value="65.0"/>
+  </properties>
+  <testcase name="testSpringTx" classname="test.SpringTxTest" time="1.584">
+    <system-out><![CDATA[2024-04-30 16:27:39 434 [main] DEBUG org.springframework.context.support.ClassPathXmlApplicationContext - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@f627d13
+2024-04-30 16:27:39 607 [main] DEBUG org.springframework.context.annotation.ClassPathBeanDefinitionScanner - Identified candidate component class: file [/Users/apple/Documents/ideaProjects/Spring/spring-013-tx-bank/target/classes/dao/impl/AccountDaoImpl.class]
+2024-04-30 16:27:39 617 [main] DEBUG org.springframework.context.annotation.ClassPathBeanDefinitionScanner - Identified candidate component class: file [/Users/apple/Documents/ideaProjects/Spring/spring-013-tx-bank/target/classes/service/impl/AccountServiceImpl.class]
+2024-04-30 16:27:39 617 [main] DEBUG org.springframework.context.annotation.ClassPathBeanDefinitionScanner - Identified candidate component class: file [/Users/apple/Documents/ideaProjects/Spring/spring-013-tx-bank/target/classes/service/impl/AccountServiceImpl2.class]
+2024-04-30 16:27:39 640 [main] DEBUG org.springframework.beans.factory.xml.XmlBeanDefinitionReader - Loaded 16 bean definitions from class path resource [spring.xml]
+2024-04-30 16:27:39 669 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+2024-04-30 16:27:39 716 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerProcessor'
+2024-04-30 16:27:39 718 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerFactory'
+2024-04-30 16:27:39 719 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.transaction.config.internalTransactionalEventListenerFactory'
+2024-04-30 16:27:39 720 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+2024-04-30 16:27:39 721 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+2024-04-30 16:27:39 727 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.aop.config.internalAutoProxyCreator'
+2024-04-30 16:27:39 764 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'accountDao'
+2024-04-30 16:27:39 772 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'jdbcTemplate'
+2024-04-30 16:27:39 785 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'dataSource'
+2024-04-30 16:27:39 853 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2024-04-30 16:27:39 856 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0'
+2024-04-30 16:27:39 892 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'accountService'
+2024-04-30 16:27:39 894 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'accountService2'
+2024-04-30 16:27:39 901 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'txManager'
+2024-04-30 16:27:39 905 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.transaction.interceptor.TransactionInterceptor#0'
+2024-04-30 16:27:39 926 [main] DEBUG org.springframework.jdbc.datasource.DataSourceTransactionManager - Creating new transaction with name [service.impl.AccountServiceImpl.transfer]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT
+2024-04-30 16:27:39 951 [main] INFO com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2024-04-30 16:27:40 381 [main] DEBUG org.springframework.jdbc.datasource.DataSourceTransactionManager - Acquired Connection [com.alibaba.druid.pool.DruidStatementConnection@7dc51783] for JDBC transaction
+2024-04-30 16:27:40 383 [main] DEBUG org.springframework.jdbc.datasource.DataSourceTransactionManager - Switching JDBC Connection [com.alibaba.druid.pool.DruidStatementConnection@7dc51783] to manual commit
+2024-04-30 16:27:40 405 [main] DEBUG org.springframework.jdbc.core.JdbcTemplate - Executing prepared SQL query
+2024-04-30 16:27:40 406 [main] DEBUG org.springframework.jdbc.core.JdbcTemplate - Executing prepared SQL statement [select * from t_act where actno = ?]
+2024-04-30 16:27:40 419 [main] DEBUG org.springframework.jdbc.core.BeanPropertyRowMapper - Mapping column 'actno' to property 'actno' of type 'java.lang.String'
+2024-04-30 16:27:40 421 [main] DEBUG org.springframework.jdbc.core.BeanPropertyRowMapper - Mapping column 'balance' to property 'balance' of type 'java.lang.Double'
+2024-04-30 16:27:40 422 [main] DEBUG org.springframework.jdbc.core.JdbcTemplate - Executing prepared SQL query
+2024-04-30 16:27:40 423 [main] DEBUG org.springframework.jdbc.core.JdbcTemplate - Executing prepared SQL statement [select * from t_act where actno = ?]
+2024-04-30 16:27:40 424 [main] DEBUG org.springframework.jdbc.core.BeanPropertyRowMapper - Mapping column 'actno' to property 'actno' of type 'java.lang.String'
+2024-04-30 16:27:40 424 [main] DEBUG org.springframework.jdbc.core.BeanPropertyRowMapper - Mapping column 'balance' to property 'balance' of type 'java.lang.Double'
+2024-04-30 16:27:40 424 [main] DEBUG org.springframework.jdbc.core.JdbcTemplate - Executing prepared SQL update
+2024-04-30 16:27:40 424 [main] DEBUG org.springframework.jdbc.core.JdbcTemplate - Executing prepared SQL statement [update t_act set balance = ? where actno = ?]
+2024-04-30 16:27:40 428 [main] DEBUG org.springframework.jdbc.core.JdbcTemplate - Executing prepared SQL update
+2024-04-30 16:27:40 428 [main] DEBUG org.springframework.jdbc.core.JdbcTemplate - Executing prepared SQL statement [update t_act set balance = ? where actno = ?]
+2024-04-30 16:27:40 429 [main] DEBUG org.springframework.jdbc.datasource.DataSourceTransactionManager - Initiating transaction commit
+2024-04-30 16:27:40 430 [main] DEBUG org.springframework.jdbc.datasource.DataSourceTransactionManager - Committing JDBC transaction on Connection [com.alibaba.druid.pool.DruidStatementConnection@7dc51783]
+2024-04-30 16:27:40 434 [main] DEBUG org.springframework.jdbc.datasource.DataSourceTransactionManager - Releasing JDBC Connection [com.alibaba.druid.pool.DruidStatementConnection@7dc51783] after transaction
+转账成功！！
+]]></system-out>
+  </testcase>
+  <testcase name="testPropagation" classname="test.SpringTxTest" time="0.082">
+    <system-out><![CDATA[2024-04-30 16:27:40 435 [main] DEBUG org.springframework.context.support.ClassPathXmlApplicationContext - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@5491f68b
+2024-04-30 16:27:40 458 [main] DEBUG org.springframework.context.annotation.ClassPathBeanDefinitionScanner - Identified candidate component class: file [/Users/apple/Documents/ideaProjects/Spring/spring-013-tx-bank/target/classes/dao/impl/AccountDaoImpl.class]
+2024-04-30 16:27:40 461 [main] DEBUG org.springframework.context.annotation.ClassPathBeanDefinitionScanner - Identified candidate component class: file [/Users/apple/Documents/ideaProjects/Spring/spring-013-tx-bank/target/classes/service/impl/AccountServiceImpl.class]
+2024-04-30 16:27:40 461 [main] DEBUG org.springframework.context.annotation.ClassPathBeanDefinitionScanner - Identified candidate component class: file [/Users/apple/Documents/ideaProjects/Spring/spring-013-tx-bank/target/classes/service/impl/AccountServiceImpl2.class]
+2024-04-30 16:27:40 462 [main] DEBUG org.springframework.beans.factory.xml.XmlBeanDefinitionReader - Loaded 16 bean definitions from class path resource [spring.xml]
+2024-04-30 16:27:40 463 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+2024-04-30 16:27:40 469 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerProcessor'
+2024-04-30 16:27:40 469 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerFactory'
+2024-04-30 16:27:40 469 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.transaction.config.internalTransactionalEventListenerFactory'
+2024-04-30 16:27:40 470 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+2024-04-30 16:27:40 470 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+2024-04-30 16:27:40 470 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.aop.config.internalAutoProxyCreator'
+2024-04-30 16:27:40 472 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'accountDao'
+2024-04-30 16:27:40 472 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'jdbcTemplate'
+2024-04-30 16:27:40 473 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'dataSource'
+2024-04-30 16:27:40 480 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2024-04-30 16:27:40 480 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0'
+2024-04-30 16:27:40 491 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'accountService'
+2024-04-30 16:27:40 491 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'accountService2'
+2024-04-30 16:27:40 492 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'txManager'
+2024-04-30 16:27:40 492 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.transaction.interceptor.TransactionInterceptor#0'
+2024-04-30 16:27:40 497 [main] DEBUG org.springframework.jdbc.datasource.DataSourceTransactionManager - Creating new transaction with name [service.impl.AccountServiceImpl.save]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT
+2024-04-30 16:27:40 497 [main] INFO com.alibaba.druid.pool.DruidDataSource - {dataSource-2} inited
+2024-04-30 16:27:40 514 [main] DEBUG org.springframework.jdbc.datasource.DataSourceTransactionManager - Acquired Connection [com.alibaba.druid.pool.DruidStatementConnection@6ad5923a] for JDBC transaction
+2024-04-30 16:27:40 514 [main] DEBUG org.springframework.jdbc.datasource.DataSourceTransactionManager - Switching JDBC Connection [com.alibaba.druid.pool.DruidStatementConnection@6ad5923a] to manual commit
+2024-04-30 16:27:40 515 [main] DEBUG org.springframework.jdbc.core.JdbcTemplate - Executing prepared SQL update
+2024-04-30 16:27:40 515 [main] DEBUG org.springframework.jdbc.core.JdbcTemplate - Executing prepared SQL statement [insert into t_act(actno,balance) values(?,?)]
+2024-04-30 16:27:40 517 [main] DEBUG org.springframework.jdbc.datasource.DataSourceTransactionManager - Participating in existing transaction
+2024-04-30 16:27:40 517 [main] DEBUG org.springframework.jdbc.core.JdbcTemplate - Executing prepared SQL update
+2024-04-30 16:27:40 518 [main] DEBUG org.springframework.jdbc.core.JdbcTemplate - Executing prepared SQL statement [insert into t_act(actno,balance) values(?,?)]
+2024-04-30 16:27:40 518 [main] DEBUG org.springframework.jdbc.datasource.DataSourceTransactionManager - Initiating transaction commit
+2024-04-30 16:27:40 518 [main] DEBUG org.springframework.jdbc.datasource.DataSourceTransactionManager - Committing JDBC transaction on Connection [com.alibaba.druid.pool.DruidStatementConnection@6ad5923a]
+2024-04-30 16:27:40 520 [main] DEBUG org.springframework.jdbc.datasource.DataSourceTransactionManager - Releasing JDBC Connection [com.alibaba.druid.pool.DruidStatementConnection@6ad5923a] after transaction
+]]></system-out>
+  </testcase>
+</testsuite>

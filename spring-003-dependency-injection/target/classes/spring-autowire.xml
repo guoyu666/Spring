@@ -9,7 +9,7 @@
 
     <!--id也叫做bean的名称-->
     <!--根据名字进行自动装配的时候，被注入的对象的ID不能随便写，怎么写？set方法的方法名去掉set,剩下的单词首字母小写-->
-    <bean id="orderDao" class="spring.dao.OrderDao"/>
+    <bean id="orderDao" class="spring.bean.OrderDao"/>
 
     <!--根据类型进行自动装配-->
     <!--自动装配是基于set方法的-->

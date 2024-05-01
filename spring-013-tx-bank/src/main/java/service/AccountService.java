@@ -1,5 +1,7 @@
 package service;
 
+import pojo.Account;
+
 /**
  * 业务接口
  * 事务就是在这个接口下控制的
@@ -13,4 +15,10 @@ public interface AccountService {
      * @param money 转账金额
      */
     void transfer(String fromActno, String toActno, double money);
+
+    /**
+     * 保存账户信息
+     * @param account
+     */
+    void save(Account account);
 }

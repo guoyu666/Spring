@@ -2,6 +2,8 @@ package service.impl;
 
 import dao.AccountDao;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Propagation;
+import org.springframework.transaction.annotation.Transactional;
 import pojo.Account;
 import service.AccountService;
 
@@ -15,6 +17,7 @@ public class AccountServiceImpl implements AccountService {
 
     // 控制事务，因为在这个方法中要完成所有的转账业务
     @Override
+    @Transactional(propagation = Propagation.REQUIRED)
     public void transfer(String fromActno, String toActno, double money) {
 
         // 第一步：开启事务
@@ -44,4 +47,25 @@ public class AccountServiceImpl implements AccountService {
         // 第三步：如果执行过程中，没有异常，提交事务
         // 第四步：如果执行业务过程中有异常，回滚事务
     }
+
+    @Transactional(propagation = Propagation.REQUIRED)
+    public void withdraw(){
+
+    }
+
+    @Resource(name = "accountService2")
+    private AccountService accountService;
+
+    @Override
+    @Transactional(propagation = Propagation.REQUIRED)
+    public void save(Account act) {
+        // 这里调用dao的insert方法
+        accountDao.insert(act); // 这里保存act-003账户
+
+
+        // 创建账户对象
+        Account act2 = new Account(1000.0,"act-004");
+        accountService.save(act2);  // 保存act-004账户
+    }
+
 }

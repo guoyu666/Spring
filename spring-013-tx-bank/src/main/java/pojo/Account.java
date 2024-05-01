@@ -2,8 +2,8 @@ package pojo;
 
 // 银行账户类
 public class Account {
-    private Double balance;
     private String actno;
+    private Double balance;
 
     @Override
     public String toString() {

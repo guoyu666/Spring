@@ -2,6 +2,7 @@ package test;
 
 import org.junit.Test;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
+import pojo.Account;
 import service.AccountService;
 
 public class SpringTxTest {
@@ -16,5 +17,14 @@ public class SpringTxTest {
         } catch (Exception e) {
             e.printStackTrace();
         }
+    }
+
+    @Test
+    public void testPropagation(){
+        ClassPathXmlApplicationContext applicationContext = new ClassPathXmlApplicationContext("spring.xml");
+        AccountService accountService = applicationContext.getBean("accountService", AccountService.class);
+
+        Account act = new Account(1000.0, "act-003");
+        accountService.save(act);
     }
 }

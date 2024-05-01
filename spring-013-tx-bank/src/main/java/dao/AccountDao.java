@@ -12,4 +12,7 @@ public interface AccountDao {
 
     // 更新账户信息
     int update(Account act);
+
+    // 保存账户信息
+    int insert(Account act);
 }

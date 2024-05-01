@@ -25,8 +25,8 @@
         <module name="spring-013-tx-bank" />
         <module name="review-reflect" />
         <module name="spring-004-scope" />
-        <module name="static-proxy" />
         <module name="dynamic-proxy-cglib" />
+        <module name="static-proxy" />
       </profile>
     </annotationProcessing>
   </component>

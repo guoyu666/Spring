@@ -27,4 +27,10 @@ public class AccountDaoImpl implements AccountDao {
         int count = jdbcTemplate.update(sql, act.getBalance(), act.getActno());
         return count;
     }
+
+    @Override
+    public int insert(Account act) {
+        String sql = "insert into t_act values(?,?)";
+        return jdbcTemplate.update(sql, act.getActno(), act.getBalance());
+    }
 }

@@ -21,6 +21,7 @@
         <module name="spring-002-first" />
         <module name="spring-005-bean-instantiation" />
         <module name="spring-012-aop-realapplication" />
+        <module name="spring-014-tx-bank-xml" />
         <module name="myspring" />
         <module name="spring-013-tx-bank" />
         <module name="review-reflect" />

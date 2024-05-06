@@ -2,6 +2,7 @@ package service;
 
 import org.springframework.stereotype.Service;
 
+// 目标类
 @Service("orderService")
 public class OrderService {
     // 目标方法

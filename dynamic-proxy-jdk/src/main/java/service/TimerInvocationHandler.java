@@ -13,7 +13,7 @@ public class TimerInvocationHandler implements InvocationHandler {
     // 目标对象（成员变量）
     private Object target;
 
-    // 构造方法
+    // 通过构造方法来传目标对象
     public TimerInvocationHandler(Object target) {
 
         // 赋值给成员变量

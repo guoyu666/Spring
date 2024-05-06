@@ -2,7 +2,6 @@ package client;
 
 import service.OrderService;
 import service.OrderServiceImpl;
-import service.OrderServiceImplSub;
 import service.OrderServiceProxy;
 
 public class Test {
@@ -19,7 +18,7 @@ public class Test {
 
         // 创建目标对象
         OrderService target = new OrderServiceImpl();
-        // 创建代理对象
+        // 创建代理对象,并且传入的参数是一个目标对象
         OrderService proxy = new OrderServiceProxy(target);
         // 调用代理对象的代理方法
         proxy.generate();

@@ -20,6 +20,7 @@
             <artifactId>spring-context</artifactId>
             <version>6.1.4</version>
         </dependency>
+        <!--junit依赖-->
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>

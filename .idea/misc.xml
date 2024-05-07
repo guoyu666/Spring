@@ -28,6 +28,7 @@
         <option value="$PROJECT_DIR$/spring-012-aop-realapplication/pom.xml" />
         <option value="$PROJECT_DIR$/spring-013-tx-bank/pom.xml" />
         <option value="$PROJECT_DIR$/spring-014-tx-bank-xml/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-015-junit/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">

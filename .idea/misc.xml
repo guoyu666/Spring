@@ -29,6 +29,7 @@
         <option value="$PROJECT_DIR$/spring-013-tx-bank/pom.xml" />
         <option value="$PROJECT_DIR$/spring-014-tx-bank-xml/pom.xml" />
         <option value="$PROJECT_DIR$/spring-015-junit/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-016-springMybatis/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">

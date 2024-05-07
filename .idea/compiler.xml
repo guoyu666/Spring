@@ -7,6 +7,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="spring-007-circular-dependency" />
+        <module name="spring-016-springMybatis" />
         <module name="spring-015-junit" />
         <module name="simple-factory" />
         <module name="spring-009-JDBC" />

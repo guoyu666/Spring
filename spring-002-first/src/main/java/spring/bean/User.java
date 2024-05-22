@@ -9,6 +9,8 @@ public class User {
     // 实现原理如下：
     // Class clazz = Class.forName("spring.bean.User");
     // Object obj = clazz.newInstance();
+
+    // 无参构造方法
     public User() {
         System.out.println("User的无参数构造方法执行了！！");
     }

@@ -15,7 +15,6 @@ public class TimerInvocationHandler implements InvocationHandler {
 
     // 通过构造方法来传目标对象
     public TimerInvocationHandler(Object target) {
-
         // 赋值给成员变量
         this.target = target;
     }
@@ -39,12 +38,14 @@ public class TimerInvocationHandler implements InvocationHandler {
     @Override
     public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
         // 这个接口的目的就是为了让你有地方写增强代码
+        // 目标执行之前的增强代码
         long begin = System.currentTimeMillis();
 
         // 调用目标对象上的目标方法
         // 方法的四要素：哪个对象，哪个方法，传什么参数，返回什么值
         Object returnValue = method.invoke(target, args);
 
+        // 目标执行之后增强
         long end = System.currentTimeMillis();
 
         System.out.println("耗时" + (end - begin));

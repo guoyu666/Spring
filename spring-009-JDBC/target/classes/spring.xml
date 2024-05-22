@@ -7,7 +7,7 @@
     <!--当然也可以集成其他人或者其他组织开发的数据源-->
     <bean id="datasource" class="bean.MyDataSource">
         <property name="driver" value="com.mysql.cj.jdbc.Driver"/>
-        <property name="url" value="jdbc:mysql://localhost:3306/mybatis_spring"/>
+        <property name="url" value="jdbc:mysql://localhost:3306/spring_test"/>
         <property name="username" value="root"/>
         <property name="password" value="13801874064guoyu"/>
     </bean>

@@ -1,7 +1,5 @@
 package service;
 
-import com.sun.security.jgss.GSSUtil;
-
 // 代理对象（代理对象和目标对象要具有相同的行为，就要实现同一个或统一接口）
 // 客户端在使用代理对象的时候就像在使用目标对象一样
 public class OrderServiceProxy implements OrderService{

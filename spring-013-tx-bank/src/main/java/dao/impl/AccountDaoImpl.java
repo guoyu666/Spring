@@ -11,6 +11,7 @@ import javax.annotation.Resource;
 @Repository("accountDao")
 public class AccountDaoImpl implements AccountDao {
 
+    // Resource注解属于四种负责注入的注解之一（@Value,@Autowired,@Resource,@Qualifier），即给Bean的属性赋值
     @Resource(name = "jdbcTemplate")
     private JdbcTemplate jdbcTemplate;
 

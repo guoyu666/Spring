@@ -4,6 +4,9 @@ import net.sf.cglib.proxy.Enhancer;
 import service.TimerMethodInterceptor;
 import service.UserService;
 
+/**
+ * 使用cglib在内存中为UserService类生成代理类，并创建对象
+ */
 public class ClientTest2 {
     public static void main(String[] args) {
         // 创建字节码增强器对象

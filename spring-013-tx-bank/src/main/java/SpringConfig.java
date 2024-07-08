@@ -17,7 +17,7 @@ public class SpringConfig {
     public DruidDataSource getDruidDataSource() {
         DruidDataSource druidDataSource = new DruidDataSource();
         druidDataSource.setDriverClassName("com.mysql.jdbc.Driver");
-        druidDataSource.setUrl("jdbc:mysql://localhost:3306/mybatis_spring");
+        druidDataSource.setUrl("jdbc:mysql://localhost:3306/spring_test");
         druidDataSource.setUsername("root");
         druidDataSource.setPassword("13801874064guoyu");
         return druidDataSource;

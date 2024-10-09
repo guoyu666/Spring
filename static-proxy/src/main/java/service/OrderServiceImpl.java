@@ -5,6 +5,7 @@ public class OrderServiceImpl implements OrderService{
     @Override
     public void generate() {    // 目标方法
         try {
+            // 模拟生成订单的耗时
             Thread.sleep(1234);
         } catch (InterruptedException e) {
             e.printStackTrace();

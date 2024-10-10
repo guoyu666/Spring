@@ -1,7 +1,7 @@
 package service;
 
 // 目标对象
-public class OrderServiceImpl implements OrderService{
+public class OrderServiceImpl implements OrderService {
     @Override
     public void generate() {    // 目标方法
         try {

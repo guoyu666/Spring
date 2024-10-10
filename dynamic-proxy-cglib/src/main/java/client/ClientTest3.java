@@ -7,9 +7,10 @@ import service.UserService;
 /**
  * 使用cglib在内存中为UserService类生成代理类，并创建对象
  */
-public class ClientTest2 {
+public class ClientTest3 {
     public static void main(String[] args) {
         // 创建字节码增强器对象
+        // 这个对象是CGLIB库当中的核心对象，就是依靠它来生成代理类
         Enhancer enhancer = new Enhancer();
 
         // 告诉CGLIB父类是谁，告诉CGLIB目标类是谁
@@ -27,9 +28,7 @@ public class ClientTest2 {
         UserService userServiceProxy = (UserService) enhancer.create();
 
         // 调用代理对象的代理方法
-        boolean success = userServiceProxy.login("admin", "123");
-        System.out.println(success ? "登录成功！" : "登录失败！");
-
-        userServiceProxy.logout();
+        // 当代理类调用方法的时候，实际调用的是MethodInterceptor中的intercept方法
+        userServiceProxy.send("java");
     }
 }

@@ -17,15 +17,13 @@ public class TimerMethodInterceptor implements MethodInterceptor {
      */
     public Object intercept(Object target, Method method, Object[] objects, MethodProxy methodProxy) throws Throwable {
         // 前面增强
-        long begin = System.currentTimeMillis();
+        System.out.println("before method " + method.getName());
 
         // 怎么调用目标对象的目标方法呢？
         Object returnValue = methodProxy.invokeSuper(target, objects);
 
         // 后面增强
-        long end = System.currentTimeMillis();
-        System.out.println("耗时" + (end - begin) + "ms");
-
+        System.out.println("after method " + method.getName());
         return returnValue;
     }
 }

@@ -5,12 +5,9 @@ package service;
  */
 public class UserService {
     // 目标方法
-    public boolean login(String username, String password) {
-        System.out.println("系统正在验证身份....");
-        if ("admin".equals(username) && "123".equals(password)) {
-            return true;
-        }
-        return false;
+    public String send(String message) {
+        System.out.println("send message:" + message);
+        return message;
     }
 
     // 目标方法

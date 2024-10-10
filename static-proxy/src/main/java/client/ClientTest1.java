@@ -4,7 +4,7 @@ import service.OrderService;
 import service.OrderServiceImpl;
 import service.OrderServiceProxy;
 
-public class Test {
+public class ClientTest1 {
     public static void main(String[] args) {
         //  OrderServiceImpl orderService = new OrderServiceImpl();
         //  orderService.generate();
